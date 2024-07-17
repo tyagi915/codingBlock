@@ -17,7 +17,8 @@ class Solution {
             }else if(nums[low] + nums[high] > target){
                 high--
             }else if(nums[low]+ nums[high] < target){
-                count = count + high-low;
+                count = count + high-low;;
+                low++;
             }
         }
         return count;
